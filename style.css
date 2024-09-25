@@ -59,7 +59,7 @@ body {
   .headmenu {
     float: right;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .btnheader {
