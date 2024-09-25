@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --font-family: "Lexend";
+    font-weight: 200;   
+}
+
 .container {
     overflow: hidden;
   }
@@ -7,12 +14,38 @@
     background-color: #2196F3;
     color: #ffffff;
     width: fit-content;
+    font-family: var(--font-family);
     line-height: 1.5rem;
     text-wrap: wrap;
     max-width: 20ch;
     text-align: right;
     margin: 2px;
-    /* display: none;  */
+    display: none; 
+  }
+
+  .logoTitle {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 3rem;
+    /* (ajouter un clamp plus tard pour le responsive) */
+  }
+
+  .headmenu {
+    float: right;
+  }
+
+  .btnheader {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
   }
   
   .show {
