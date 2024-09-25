@@ -107,6 +107,7 @@ body {
     gap: 0.2rem;
     padding: 0.5rem 0 0 0;
   }
+}
   
   .filterDiv {
     float: left;
@@ -158,10 +159,7 @@ body {
 
   .btnheader:hover {
     background-color: #ddd;
-  }
-  100% {
     background-position: 0 0;
-  }
 }
 
 .button-85:after {
