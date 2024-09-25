@@ -1,0 +1,37 @@
+.container {
+    overflow: hidden;
+  }
+  
+  .filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: fit-content;
+    line-height: 1.5rem;
+    text-wrap: wrap;
+    max-width: 20ch;
+    text-align: right;
+    margin: 2px;
+    /* display: none;  */
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
