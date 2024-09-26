@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
 </head>
-<body>
+<body onload="filterSelect('all')">
+    
+<header>
+    <div class="logoTitle">
+        <img src="./img/popcorn.png" width="100px"><h1>Wild's Cut</h1>
+        
+    </div>
+    <div class="headmenu">
+        <button class="btnheader">Account</button>
+        <button class="btnheader">Watchlist</button>
+    </div>
+</header>
+    
+<main>
 <div id="myBtnContainer">
     <button class="btn active" onclick="filterSelection('all')"> Show all</button>
     <button class="btn" onclick="filterSelection('action')"> Action</button>
@@ -23,7 +36,7 @@
 
 </div>
   
-<main>
+
   
 <section class="container">
     <article class="filterDiv animation"><h2>Le Voyage de Chihiro, 2001</h2>
