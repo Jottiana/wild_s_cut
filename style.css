@@ -198,7 +198,7 @@ body {
 
     display: flex;
     inset: auto 0 0 0;
-    position: absolute;
+    position: sticky;
     background-color: #666;
     
   }
