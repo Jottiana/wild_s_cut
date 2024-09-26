@@ -94,23 +94,19 @@ body {
     background-color: #666;
     color: white;
   }
-<<<<<<< HEAD
   footer {
 
     display: flex;
     inset: auto 0 0 0;
-    position:absolute;
+    position: absolute;
     background-color: #666;
     
   }
   
   .last {
   display: flex;
-  grid-template-rows: auto;
-  flex-direction: row;
-  justify-content: flex-end;
-  justify-items: flex-end;
-  text-align: right;
+  justify-content:end; 
+  text-align:
 
   } 
 
@@ -139,5 +135,3 @@ body {
     text-decoration: none;
   }
   
-=======
->>>>>>> 607594d54e22ecbe0f82709d38ff268e9dd84f9e
