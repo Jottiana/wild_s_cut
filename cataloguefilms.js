@@ -2,7 +2,7 @@ const listeFilms = [
   {
     name: "Z",
     date: "2001",
-    type: "Action",
+    type: ["Action", "Animation"],
     duration: "1h30min",
     desc: "Oscar du meilleur film d'animation, écrit et réalisé par Hayao Miyazaki et produit par le studio Ghibli.",
     img: "../img/affichematrix.png",
