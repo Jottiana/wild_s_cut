@@ -522,4 +522,5 @@ const listeFilms = [
     watchlist: false,
   },
 ];
-   
+
+export default listeFilms;
