@@ -56,7 +56,7 @@ function createCard(movie) {
   filmDescription.classList.add("film-description");
 
   const descriptionTitle = document.createElement("h4");
-  descriptionTitle.textContent = "Summary:";
+  descriptionTitle.textContent = "Synopsis";
 
   const descriptionText = document.createElement("p");
   descriptionText.textContent = movie.desc;

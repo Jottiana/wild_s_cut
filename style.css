@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 :root {
   --font-family: "Lexend";
@@ -38,7 +37,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
-  filter:drop-shadow(0 1px 3px rgba(0, 0, 0, 0.942));
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.942));
 }
 
 .logoTitle {
@@ -50,10 +49,10 @@ header {
 header h1 {
   font-size: 8rem;
   font-weight: 200;
-  font-family: 'Abril Fatface';
+  font-family: "Abril Fatface";
   margin: 0;
-  filter:drop-shadow(0 1px 10px rgba(31, 31, 31, 0.942));
-	text-shadow: 0px 1px 2px #000000;
+  filter: drop-shadow(0 1px 10px rgba(31, 31, 31, 0.942));
+  text-shadow: 0px 1px 2px #000000;
   text-shadow: 0px 1px 5px #0f0f0f;
   text-shadow: 0px 1px 2px #141414;
   text-shadow: 1px 2px 3px #313131, 0 0 0 #000, 1px 2px 3px #000000;
@@ -176,6 +175,10 @@ header h1 {
   border-radius: 10px;
 }
 
+h4 {
+  margin: 0;
+}
+
 .film-info {
   width: 65%;
 }
@@ -189,6 +192,10 @@ header h1 {
 
 .film-description {
   margin-top: 20px;
+}
+
+.film-description p {
+  margin-top: 5px;
 }
 
 #voir-plus {
@@ -264,7 +271,6 @@ header h1 {
     padding: 0.5rem 0 0 0;
   }
 }
-
 
 .button-85:after {
   z-index: -1;
