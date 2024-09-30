@@ -1,385 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wild's cut</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
-</head>
-<body onload="filterSelect('all')">
-    
-<header>
-    <div class="logoTitle">
-        <img src="./img/popcorn.png" width="100px"><h1>Wild's Cut</h1>
-        
-    </div>
-    <div class="headmenu">
-        <button class="btnheader">Accounts</button>
-        <button class="btnheader">Watchlist</button>
-    </div>
-</header>
-    
-<main>
-<div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelect('all')"> Show all</button>
-    <button class="btn" onclick="filterSelect('action')"> Action</button>
-    <button class="btn" onclick="filterSelect('horreur')"> Horreur</button>
-    <button class="btn" onclick="filterSelect('animation')"> Animation</button>
-    <button class="btn" onclick="filterSelect('comédie')"> Comédie</button>
-    <button class="btn" onclick="filterSelect('drame')"> Drame</button>
-    <button class="btn" onclick="filterSelect('science-fiction')"> Science-fiction</button>
-    <button class="btn" onclick="filterSelect('fantastique')"> Fantastique</button>
-    <button class="btn" onclick="filterSelect('romance')"> Romance</button>
-    <button class="btn" onclick="filterSelect('fantasy')"> Fantasy</button>
-    <button class="btn" onclick="filterSelect('surprise')"> Surprends moi !</button>
 
-</div>
-  
-
-  
-<section class="container">
-    <article class="filterDiv animation"><h2>Le Voyage de Chihiro, 2001</h2>
-        <p>Oscar du meilleur film d'animation, écrit et réalisé par Hayao Miyazaki 
-                et produit par le studio Ghibli.
-                Le film raconte l'histoire de Chihiro, une fillette de dix ans qui, 
-                alors qu'elle se rend en famille vers sa nouvelle maison, 
-                entre dans le monde des esprits. Après la transformation de ses parents 
-                en porcs par la sorcière Yubaba, Chihiro prend un emploi dans l'établissement 
-                de bains de la sorcière pour retrouver ses parents et regagner le monde des humains.
-        </p>
-    </article>
-    
-    <article class="filterDiv action"><h2>Terminator 2, 1991</h2>
-        <p>Au lendemain de l'holocauste nucléaire du 29 août 1997, 
-            les survivants humains entrent en résistance contre la dictature des « machines » 
-            (des robots intelligents), ce qui les mène à la victoire en 2029.
-            L'ordinateur qui contrôle les machines, Skynet, avait envoyé un Terminator 
-            (un cyborg tueur) en 1984, afin d'éliminer Sarah Connor avant 
-            qu'elle n'eût mis au monde son fils, John Connor, appelé dans le futur à devenir 
-            le chef de la résistance humaine contre les machines. Ce plan n'ayant pas fonctionné, 
-            Skynet envoie de nouveau un tueur cybernétique, cette fois-ci en 1995, 
-            quelque temps avant le début de la guerre atomique de 1997, 
-            pour cette fois-ci tenter d'éliminer directement John Connor, 
-            encore enfant à cette époquea. Mais, dans le même temps, 
-            John Connor envoie lui même lui aussi à cette époque le même modèle de Terminator 
-            (modèle 101) que celui envoyé en 1984 reprogrammé cette fois pour protéger John. 
-        </p>
-
-    </article>
-    
-    <article class="filterDiv drame"><h2>La Liste de Schindler, 1993</h2>
-        <p>Adaptation du roman biographique La Liste de Schindler 
-                (Schindler's Ark) de Thomas Keneally. 
-                Avec dans les rôles principaux les acteurs Liam Neeson, 
-                Ben Kingsley et Ralph Fiennes, le film décrit comment Oskar Schindler, 
-                un industriel allemand, réussit pendant la Seconde Guerre mondiale 
-                à sauver environ 1 200 Juifs promis à la mort 
-                dans le camp de concentration de Płaszów, sans pour autant occulter 
-                les travers et ambiguïtés d'un espion de l'Abwehr et membre du parti nazi. 
-        </p>
-
-    </article>
-    
-    <article class="filterDiv animation"><h2>Le Roi lion, 1994</h2>
-        <p>En Afrique, dans une contrée nommée la Terre des Lions, 
-                les lions dirigent le monde animal du haut du Rocher des Lions. 
-                Le roi Mufasa et la reine Sarabi, aidés du mandrill Rafiki, chaman et conseiller du roi, 
-                présentent leur nouveau-né Simba aux animaux du royaume. 
-        </p>
-
-    </article>
-    
-    <article class="filterDiv comédie"><h2>Hot Fuzz, 2007</h2>
-        <p>À Londres, le policier Nicholas Angel est le meilleur de son équipe, 
-                aussi à l'aise dans la résolution d'affaires que dans l'action, 
-                à tel point qu'il fait passer ses collègues pour de simples gardiens 
-                de la paix totalement incompétents. Afin de faire cesser cette comparaison 
-                qui désavantage le reste de sa brigade, son chef lui offre une « promotion » 
-                dans le petit village de Sandford dans le Gloucestershire, patelin vainqueur 
-                depuis plusieurs années du titre de « Village de l'année » où il ne se passe quasiment rien, 
-                selon l'association de surveillance du voisinage, gérée par les propriétaires des commerces 
-                de la ville. Motivée par cette affectation forcée, la fiancée de Nicholas décide 
-                de le quitter en lui reprochant notamment son perfectionnisme et sa dépendance au travail, 
-                traits de caractère qui seront, par ailleurs, incompatibles avec la vie apaisée et 
-                laxiste de Sandford.
-        </p>
-    </article>
-
-    <article class="filterDiv drame"><h2>Django Unchained, 2012</h2>
-        <p>Au Texas, en 1858, une file d'esclaves enchaînés avance péniblement 
-                sous la garde des frères Ace et Dicky Speck. En pleine nuit, le groupe croise le docteur 
-                King Schultz, qui voyage sur sa roulotte de dentiste ambulant (avec Fritz le cheval 
-                et une grande dent factice qui gigote au bout de son ressort sur le toit). Schultz, 
-                ignorant l'hostilité manifeste des Speck, demande aux prisonniers si l'un d'entre eux 
-                connaît les dénommés « frères Brittle » ; celui qui s'avérera être Django répond par 
-                l'affirmative. Mais lorsque Schultz insiste pour acquérir Django, Ace Speck le menace de 
-                son fusil. Schultz tue rapidement Ace, libère Django, et laisse les autres esclaves 
-                s'occuper de Dicky.
-        </p>
-
-    </article>
-    
-    <article class="filterDiv drame"><h2>Inglourious Basterds, 2009</h2>
-        <p>Dans la France occupée, Shosanna Dreyfus, une jeune juive française, 
-                assiste à l'exécution de sa famille sous les ordres du colonel SS Hans Landa. 
-                Mais elle parvient à s'échapper et s'enfuit à Paris, où elle se construit une 
-                nouvelle identité, devenant propriétaire d'un cinéma de quartier.
-                Pendant ce temps, le lieutenant Aldo Raine recrute un petit groupe de soldats juifs 
-                américains pour terroriser les troupes d'occupation allemandes. Très vite connus 
-                sous le nom des « Bâtards », s'appliquant à scalper leurs ennemis, Raine et ses hommes 
-                sont amenés à faire équipe avec Bridget von Hammersmark, une actrice allemande qui est 
-                aussi agent double pour les services secrets britanniques, afin d'assassiner les principaux 
-                dirigeants du Troisième Reich, réunis pour la première d'un film de propagande. 
-        </p>
-    </article>
-    
-    <article class="filterDiv drame"><h2>Virgin Suicides, 1999</h2>
-        <p>Un narrateur (interprété par Giovanni Ribisi) commence à raconter une histoire qui 
-                s'est déroulée pendant sa jeunesse, 25 ans auparavant, lorsqu'il vivait dans un quartier 
-                calme, où les gens menaient une vie bourgeoise et parfaite à Grosse Pointe (Michigan), 
-                située dans la banlieue de Détroit, au milieu des années 1970. Une histoire qui allait 
-                le transformer lui et ses amis, à jamais. Tout commence par le suicide raté de Cecilia Lisbon 
-                (Hanna R. Hall), la sœur cadette des cinq filles Lisbon, les autres sont : Therese 
-                (Leslie Hayman), Mary (Andrea Joy Cook), Bonnie (Chelse Swain), Lux (Kirsten Dunst). 
-                La famille Lisbon est catholique pratiquante, le père est professeur de mathématiques au 
-                lycée proche et se passionne pour l'histoire de l'aviation. La mère semble très stricte 
-                sur l'éducation.
-        </p>
-    </article>
-    
-    <article class="filterDiv horreur drame"><h2>Titane, 2021</h2>
-        <p>Alexia, gravement blessée dans un accident de la route alors qu'elle était enfant, 
-                est sauvée par la pose d'un implant en titane dans son crâne. Vers l'âge de 30 ans, 
-                elle devient danseuse érotique1 dans des rassemblements de bolidage interlopes et 
-                elle vit toujours chez ses parents. Mais elle souffre d'un grave syndrome post-traumatique 
-                et est prise de pulsions meurtrières2. Des crimes sanglants se succèdent dont la police 
-                recherche l'auteur.
-                Au même moment, Vincent, pompier, croit retrouver son fils Adrien disparu depuis dix ans 
-                après son interpellation par les inspecteurs de la douane dans un aéroport. En réalité, 
-                il s'agit d'Alexia, qui a pris l'apparence d'un jeune homme2 afin d'échapper aux forces 
-                de l'ordre. Vincent incorpore Alexia/Adrien dans l'escouade des pompiers qu'il commande. 
-                Un jeu complexe d'attirance et de répulsion va se jouer entre Vincent et son prétendu fils 
-                qui reste muet. Toute cette situation se complique encore plus avec la grossesse improbable 
-                et monstrueuse d'Alexia… 
-        </p>
-    </article>
-    
-    <article class="filterDiv comédie"><h2>Barbie, 2023</h2>
-        <p>Barbie stéréotypée (Barbie) et une large panoplie de Barbie résident toutes à Barbieland, 
-                incarnant des poupées sûres d'elles, joyeuses, insouciantes et persuadées d'avoir rendu 
-                les filles humaines heureuses. Alors que leurs homologues Ken passent leurs journées à se 
-                livrer à des activités balnéaires, les Barbie occupent tous les postes importants : 
-                elles sont médecins, avocates, écrivaine, sirène et même présidente. Ken Plage (Ken) 
-                n'est heureux qu'avec Barbie et cherche une relation plus étroite avec elle sans savoir 
-                forcément laquelle puisqu'ils ne sont pas sexués, mais Barbie préfère s'amuser avec les 
-                autres Barbie.
-                Au cours d'une soirée dansante, Barbie est soudainement prise de pensées morbides. 
-                Le lendemain, elle constate qu'elle n'est plus apte à sa routine habituelle et découvre que 
-                ses pieds sont plats et qu'elle a de la cellulite. Barbie bizarre, une paria sage et 
-                défigurée, affirme que pour guérir elle doit voyager dans le vrai monde et trouver 
-                l'enfant dont elle est le jouet. En route vers le monde réel, Barbie trouve Ken 
-                allongé sur la banquette arrière de sa Chevrolet rose. Elle ne peut qu'accepter 
-                à contrecœur qu'il l'accompagne dans son périple.
-        </p>
-    </article>
-    
-    <article class="filterDiv action science-fiction"><h2>Matrix, 1999</h2>
-        <p>Thomas A. Anderson18, un jeune informaticien connu dans le monde du hacking sous le 
-                pseudonyme de Neo19, est contacté via son ordinateur par ce qu'il pense être un groupe 
-                de hackers. Ils lui font découvrir que le monde dans lequel il vit n'est qu'un monde 
-                virtuel appelé la Matrice, à l'intérieur duquel les êtres humains sont gardés 
-                inconsciemment sous contrôle.
-                Morpheus, le capitaine du Nebuchadnezzar20, contacte Neo et pense que celui-ci est 
-                l'Élu qui peut libérer les êtres humains du joug des machines et prendre le contrôle 
-                de la Matrice (selon ses croyances et ses convictions). 
-        </p>
-    </article>
-    
-    <article class="filterDiv drame"><h2>In the Mood for Love, 2000</h2>
-        <p>Hong Kong, colonie britannique, 1962. M. Chow, journaliste, et Mme Chan, 
-                secrétaire dans une société de livraisons, louent des appartements voisins. 
-                Leurs conjoints respectifs travaillent beaucoup et les laissent souvent seuls. 
-                De plus, la présence chaleureuse mais étouffante de la propriétaire de Mme Chan, 
-                Mme Suen, et de leurs voisins bruyants et amateurs de mah-jong, les force à souvent 
-                rester seuls chez eux. M. Chow et Mme Chan, au début simplement courtois l'un envers 
-                l'autre, commencent à tisser des liens plus forts quand ils se rendent compte à travers 
-                deux indices discrets mais sans appel que leurs deux conjoints ont entre eux une liaison 
-                amoureuse. 
-        </p>
-    </article>
-   
-    <article class="filterDiv action science-fiction"><h2>Avengers, 2012</h2>
-        <p>Un an après avoir été exilé d'AsgardNote 1, Loki, le frère de Thor, s'allie avec 
-            « l'Autre », le chef d'une race extraterrestre : les Chitauris. L'Autre souhaite 
-            s'emparer du Tesseract, qui est actuellement sur la Terre. Avec l'aide de l'armée 
-            des Chitauris, Loki pourra prendre le contrôle de cette planète en échange du Tesseract. 
-            Loki se voit confier un sceptre qui l'aidera dans sa mission.
-        </p>
-    </article>
-    
-    <article class="filterDiv drame"><h2>La Môme, 2007</h2>
-        <p>Tout commence avec Édith, âgée de quelques années en 1918, 
-                en pleurs dans une rue de Paris après que d'autres enfants se soient moqués d'elle. 
-                Quelques mètres plus loin, sa mère chante pour essayer de gagner sa vie. 
-                Cette dernière écrit à son mari, Louis Gassion (Jean-Paul Rouve), envoyé sur le front, 
-                qu'elle va partir poursuivre sa carrière de chanteuse en laissant Édith à sa grand-mère 
-                maternelle. Louis Gassion, alors qu'il rentre à Paris, finit par trouver Édith très malade, 
-                faute de soins. Il la confie donc à sa propre mère, gérante d'une maison close en Normandie, 
-                avant de disparaître. Les prostituées de la maison close s'occupent d'Édith, notamment Titine 
-                (Emmanuelle Seigner), qui prend la fillette sous son aile et s'en occupe comme si elle était 
-                sa fille. À cette époque, Édith perd momentanément la vue à cause d'une kératite à la suite 
-                des mauvais soins lors de son passage chez sa grand-mère maternelle, qui est guérie quelques 
-                jours plus tard grâce aux prières adressées à sainte Thérèse de Lisieux. 
-        </p>
-    </article>
-    
-    <article class="filterDiv comédie romance"><h2>Hitch, 2005</h2>
-        <p>Alex Hitchens (Will Smith), surnommé Hitch, travaille à son compte en exerçant la 
-                profession très particulière de Docteur Love, une sorte de coach très efficace pour 
-                les hommes timides ou malchanceux avec la gent féminine. Son métier lui vaut un succès 
-                certain. Connaissant tout ce qu'il y a à savoir sur les femmes, il prodigue de précieux 
-                conseils à ses clients, souvent aidés par de précieuses informations sur l'élue de leur cœur. 
-                Son prochain défi : aider l'obscur et maladroit comptable Albert Brennamann (Kevin James) 
-                à conquérir la riche et inaccessible héritière Allegra Cole (Amber Valletta). Après l'avoir 
-                rencontré, Hitch comprend qu'Albert est profondément amoureux de l'élue de son cœur, et 
-                décide de l'aider. Dans un premier temps, il lui conseille de faire en sorte qu'Allegra 
-                le remarque, en la choquant et en l'impressionnant lors d'une réunion entre l'héritière 
-                et son équipe de consultants financiers (dont Albert fait partie). Bien qu'il ait 
-                démissionné dans le feu de l'action, Albert parvient à décrocher un rendez-vous. 
-        </p>
-    </article>
-   
-    <article class="filterDiv science-fiction fantastique"><h2>Le Prestige</h2>
-        <p>Alfred Borden (Christian Bale) est un magicien de la fin du XIXe siècle, 
-                jugé pour l'assassinat supposé de son rival Robert Angier (Hugh Jackman). 
-                Quelques années plus tôt, la rivalité qui oppose les deux hommes débute à la 
-                suite de l'accident mortel de la femme d'Angier. Les deux magiciens s'affrontent 
-                pour un tour de magie nommé « l'homme transporté » qu'ils se disputent, avec en toile 
-                de fond les recherches sur l'électricité de Nikola Tesla (David Bowie). 
-        </p>
-    </article>
-    
-    <article class="filterDiv science-fiction"><h2>Interstellar, 2014</h2>
-        <p>En 2067, la Terre est devenue de moins en moins accueillante pour l'humanité plongée 
-                dans une grave crise alimentaire. L'humanité est tellement résignée sur son destin que 
-                les écoles enseignent que les missions Apollo n'eurent pas lieu et n'étaient que des 
-                impostures destinées à ruiner l'URSS. Cooper, ancien pilote de la NASA devenu agriculteur, 
-                vit dans une ferme avec sa famille. Sa fille Murphy, âgée de dix ans, croit leur maison
-                hantée par un fantôme voulant communiquer avec elle en faisant tomber des livres de la
-                bibliothèque de sa chambre. Après une forte tempête, venue interrompre le match de 
-                baseball auquel il assistait en famille, Cooper remarque que la poussière entrée par 
-                la fenêtre dans la chambre de sa fille forme des lignes au dessin étrange, Cooper 
-                estime que ce phénomène de communication est causé par la gravité, et remarque que 
-                les données reçues sont en binaire, et non pas en morse comme le croyait Murphy. 
-                Le « fantôme » pourrait être une intelligence inconnue leur adressant un message 
-                codé au moyen d'ondes gravitationnelles qui altèrent la poussière sur le sol. 
-                Ils comprennent que ce message leur indique les coordonnées géographiques d'un lieu 
-                où ils décident de se rendre. 
-        </p>
-    </article>
-    
-    <article class="filterDiv science-fiction"><h2>2001, l'Odyssée de l'espace, 1968</h2>
-        <p>Le film retrace, à travers différentes époques de l'histoire humaine, le rôle joué 
-                dans l'évolution de l'humanité par une intelligence inconnue. Il s'ouvre sur le générique 
-                avec le poème symphonique Ainsi parlait Zarathoustra de Richard Strauss, puis arrive un 
-                écran noir de quelques minutes, sur fond d'Atmosphères (en), une œuvre pour orchestre de 
-                György Ligeti. 
-        </p>
-    </article>
-    
-    <article class="filterDiv fantastique"><h2>Big Fish, 2003</h2>
-        <p>Alors que l'on célèbre le mariage de son fils William, Edward Bloom raconte, 
-                pour la énième fois, mais avec talent, comment, le jour de la naissance de Will, 
-                il a attrapé un énorme poisson en utilisant comme appât sa propre alliance. 
-                Will est embarrassé et explique à son épouse, Joséphine, qu'à cause des mensonges 
-                que raconte son père sur tous les sujets, il ne peut lui faire confiance. Par la suite, 
-                les relations entre le père et le fils deviennent si tendues qu'ils ne se parlent pas 
-                durant trois ans. Mais, quand il apprend que son père est mourant, Will vient le voir 
-                en compagnie de Joséphine, enceinte. Dans l'avion qui le mène en Alabama, Will se 
-                remémore une histoire de son père où il prétendait qu'étant petit il s'était aventuré 
-                dans un marais et avait rencontré une sorcière qui lui avait dévoilé l'instant de sa mort 
-                dans son œil de verre. 
-        </p>
-    </article>
-    
-    <article class="filterDiv fantasy"><h2>Le Seigneur des Anneaux: La Communauté de l'anneau, 2001</h2>
-        <p>L'histoire commence lorsque, sur la Terre du Milieu, le magicien Gandalf le Gris 
-                (Ian McKellen) découvre que l'anneau que possède le jeune Hobbit Frodon Sacquet 
-                (Elijah Wood), qui lui a été légué par son oncle Bilbon et qui permet de se rendre invisible, 
-                est en réalité l'Anneau unique recherché avidement par le seigneur ténébreux Sauron car 
-                il lui permettrait de retrouver toute sa puissance. Afin d'éviter que Sauron ne récupère 
-                l'anneau, Frodon et ses huit compagnons, la Communauté de l'Anneau, entament un périlleux 
-                voyage dans le but de le détruire. 
-        </p>
-    </article>
-    
-    <article class="filterDiv action science-fiction"><h2>Blade Runner, 1982</h2>
-        <p>L'action du film se situe à Los Angeles en 2019 et met en scène Rick Deckard
-                (interprété par Harrison Ford), un ancien policier qui reprend du service pour 
-                traquer un groupe de réplicants, des androïdes biosynthétiques, menés par l'énigmatique 
-                Roy Batty (interprété par Rutger Hauer). 
-        </p>
-    </article>
-    
-    <article class="filterDiv romance"><h2>Moulin Rouge, 2001</h2>
-        <p>En 1900, un homme prénommé Christian, souffrant de dépression, commence à écrire 
-                sur sa machine à écrire. Il y écrit son histoire un an auparavant, alors qu'il arrive 
-                dans le quartier de Montmartre, à Paris, dans l'espoir de devenir l'un des membres du 
-                mouvement bohème de l'époque. Il découvre que ses voisins sont une troupe d'artistes 
-                dirigées par Henri de Toulouse-Lautrec. Ces derniers demandent de l'aide à Christian 
-                pour les aider à finir d'écrire leur prochain spectacle, Spectaculaire Spectaculaire, 
-                qu'ils souhaitent présenter à Harold Zidler, le propriétaire du Moulin-Rouge. Le groupe 
-                arrive au Moulin-Rouge pendant une représentation des Diamond Dog Dancers de Harry Zidler. 
-                Toulouse-Lautrec s'arrange afin que Christian puisse rencontrer Satine, l'actrice principale 
-                de la troupe, dans ses quartiers afin de lui présenter son projet, sans savoir que Satine a 
-                été promise au riche duc de Monroth, un potentiel investisseur du cabaret. 
-        </p>
-    </article>
-</section>
-</main>
-          <div class="research">
-        <input type="search" id="recherche" name="q" />
-        <button class="button-85" role="button">trouve ton film</button>
+    <script type="module" src="./script.js"></script>
+  </head>
+  <body onload="filterSelect(null)">
+    <header>
+      <div class="logoTitle">
+        <img src="./img/logo-test-1.png" width="200px" />
+        <h1>Wild's Cut</h1>
       </div>
-      <div class="backToTop">
-        <a href="#" class="top">Back to Top &#8593;</a>
+      <div class="headmenu">
+        <button class="btnheader">Account</button>
+        <button class="btnheader">Watch List</button>
       </div>
-<footer>
-    <h1>
-        Wild's cut 
-            by J.A.M.S 
-    </h1>
-        <div>
-            <h3>
-            © 2024 All rights reserved
-            </h3>
+    </header>
 
-        </div>
-        
+    <main>
+      <div class="filter-btn-container">
+        <button class="filter-btn" onclick="filterSelect(null)">Show all</button>
+        <button class="filter-btn" onclick="filterSelect('Action')">Action</button>
+        <button class="filter-btn" onclick="filterSelect('Animation')">Animation</button>
+        <button class="filter-btn" onclick="filterSelect('Comédie')">Comédie</button>
+        <button class="filter-btn" onclick="filterSelect('Drame')">Drame</button>
+        <button class="filter-btn" onclick="filterSelect('Fantastique')">Fantastique</button>
+        <button class="filter-btn" onclick="filterSelect('Fantasy')">Fantasy</button>
+        <button class="filter-btn" onclick="filterSelect('Horreur')">Horreur</button>
+        <button class="filter-btn" onclick="filterSelect('Romance')">Romance</button>
+        <button class="filter-btn" onclick="filterSelect('Science-Fiction')">Science-fiction</button>
+        <button class="filter-btn" onclick="filterSelect('Thriller')">Thriller</button>
+        <button class="filter-btn" onclick="filterSelect('Surprise')">Surprise me!</button>
+      </div>
 
-  <section class="last">
-    
-    <p><a href="cookies">Cookies</a> <P>
-    <P><a href="politique-de-confidentialite">Politique de confidentialité</a> </P>
-    <P><a href="contacts">Contacts</a></p>
-
-    </section>
-
-    <nav>
-        <div> 
-            <a href="https://facebook.com"><img src="img/icons8-facebook-48.png" alt="fb icon"></a>
-            <a href="https://x.com/"><img src="img/icons8-twitter-circled-48.png" alt="twitter icon"></a> 
-            <a href="https://www.instagram.com/"><img src="img/icons8-instagram-old-48.png" alt="inst icon"></a>
-
-        </div>
-
-            <p> 
-                <span class="material-symbols-outlined"> <a href="#acceuil"></a>arrow_upward</span>
+      <div class="movies-container-all">
+        <!-- <div class="film-card-container">
+          <div class="flex-container">
+            <div class="affiche-container">
+              <div class="affiche">
+                <span>Affiche ici</span>
+              </div>
+            </div>
+            <div class="film-info">
+              <span class="film-title">Titre Film</span>
+              <div class="film-details">
+                <span class="date">Date: 1999</span>
+                <span class="type">Genre: SF, Action</span>
+                <span class="duration">Durée: 1h43min</span>
+              </div>
+            </div>
+          </div>
+          <div class="film-description">
+            <h2>Description:</h2>
+            <p>
+              Lorem ipsum lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
+              lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
+              lorem.
+              <button id="voir-plus">Voir plus</button>
             </p>
+          </div>
+        </div> -->
+      </div>
+    </main>
+    <div class="research">
+      <input type="search" id="recherche" name="q" />
+      <button class="button-85" role="button">Recherche</button>
+    </div>
+    <footer>
+      <h1>Wild's cut by J.A.M.S</h1>
+      <div>
+        <h3>© 2024 All rights reserved</h3>
+      </div>
 
-        
-    </nav>
-</footer>
-</body>
+      <section class="last">
+        <p><a href="cookies">Cookies</a></p>
+        <p></p>
+        <p>
+          <a href="politique-de-confidentialite"
+            >Politique de confidentialité</a
+          >
+        </p>
+        <p><a href="contacts">Contacts</a></p>
+      </section>
+
+      <nav>
+        <div>
+          <a href="https://facebook.com"
+            ><img src="img/icons8-facebook-48.png" alt="fb icon"
+          /></a>
+          <a href="https://x.com/"
+            ><img src="img/icons8-twitter-circled-48.png" alt="twitter icon"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="img/icons8-instagram-old-48.png" alt="inst icon"
+          /></a>
+        </div>
+
+        <p>
+          <span class="material-symbols-outlined">
+            <a href="#acceuil"></a>arrow_upward</span
+          >
+        </p>
+      </nav>
+    </footer>
+  </body>
+
 </html>
