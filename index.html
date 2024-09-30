@@ -6,7 +6,7 @@
     <title>Wild's cut</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body onload="filterSelect(null)">
+  <body>
     <header>
       <div class="logoTitle">
         <img src="./img/logo-test-1.png" width="200px" />
@@ -19,6 +19,18 @@
     </header>
 
     <main>
+      <script>
+        function filterSelect(genre) {
+  const cardsContainer = document.querySelector(".movies-container-all");
+  console.log(cardsContainer);
+  emptyList();
+  const filteredMovies = listeFilms.filter((movie) => movie.type == genre || genre === null);
+  filteredMovies.forEach((movie) => {
+    const card = createCard(movie);
+    console.log(card);
+    cardsContainer.appendChild(card);
+  });
+}</script>
       <div class="filter-btn-container">
         <button class="filter-btn" onclick="filterSelect(null)">Show all</button>
         <button class="filter-btn" onclick="filterSelect('Action')">Action</button>
