@@ -33,5 +33,5 @@ function filterSelect(genre) {
 
 window.filterSelect = filterSelect;
 
-export default filterSelect;
-export default emptyList;
+export filterSelect;
+export emptyList;
