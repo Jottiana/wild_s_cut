@@ -1,19 +1,18 @@
 import createCard from "./createmoviecard.js";
 import listeFilms from "./movieCatalog.js";
 
-document.addEventListener('load', function() {
+document.addEventListener("load", function () {
   filterSelect(null);
 });
 
-
-function emptyList() {
+export function emptyList() {
   let listeFilms = document.querySelector(".movies-container-all");
   while (listeFilms.lastElementChild) {
     listeFilms.removeChild(listeFilms.lastElementChild);
   }
 }
 
-function filterSelect(genre) {
+export function filterSelect(genre) {
   const cardsContainer = document.querySelector(".movies-container-all");
   console.log(cardsContainer);
   emptyList();
@@ -31,7 +30,10 @@ function filterSelect(genre) {
   });
 }
 
-window.filterSelect = filterSelect;
+const buttons = document.querySelectorAll(".filter-btn");
 
-export filterSelect;
-export emptyList;
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    filterSelect(button.dataset.filter);
+  });
+});
