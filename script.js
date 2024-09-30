@@ -1,6 +1,10 @@
 import createCard from "./createmoviecard.js";
 import listeFilms from "./movieCatalog.js";
 
+window.addEventListener('load', function() {
+  filterSelect(null);
+});
+
 // document.addEventListener("DOMContentLoaded", () => {
 //   const cardsContainer = document.querySelector(".movies-container-all");
 //   listeFilms.forEach((movie) => {
