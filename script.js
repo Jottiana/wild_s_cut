@@ -1,21 +1,18 @@
 import createCard from "./createmoviecard.js";
-import listeFilms from "./cataloguefilms.js";
+import listeFilms from "./movieCatalog.js";
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const cardsContainer = document.querySelector(".movies-container-all");
-//   listeFilms.forEach((movie) => {
-//     const card = createCard(movie);
-//     cardsContainer.appendChild(card);
-//   });
-// });
-function emptyList() {
+document.addEventListener("load", function () {
+  filterSelect(null);
+});
+
+export function emptyList() {
   let listeFilms = document.querySelector(".movies-container-all");
   while (listeFilms.lastElementChild) {
     listeFilms.removeChild(listeFilms.lastElementChild);
   }
 }
 
-function filterSelect(genre) {
+export function filterSelect(genre) {
   const cardsContainer = document.querySelector(".movies-container-all");
   console.log(cardsContainer);
   emptyList();
@@ -33,4 +30,10 @@ function filterSelect(genre) {
   });
 }
 
-window.filterSelect = filterSelect;
+const buttons = document.querySelectorAll(".filter-btn");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    filterSelect(button.dataset.filter);
+  });
+});

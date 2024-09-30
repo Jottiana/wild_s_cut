@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
     <script type="module" src="./script.js"></script>
   </head>
-  <body onload="filterSelect(null)">
+  <body>
     <header>
       <div class="logoTitle">
         <img src="./img/logo-test-1.png" width="200px" />
@@ -20,28 +20,35 @@
     </header>
 
     <main>
+      <!--       <script>
+        function filterSelect(genre) {
+  const cardsContainer = document.querySelector(".movies-container-all");
+  console.log(cardsContainer);
+  emptyList();
+  const filteredMovies = listeFilms.filter((movie) => movie.type == genre || genre === null);
+  filteredMovies.forEach((movie) => {
+    const card = createCard(movie);
+    console.log(card);
+    cardsContainer.appendChild(card);
+  });
+}</script> -->
       <div class="filter-btn-container">
-        <button class="filter-btn" onclick="filterSelect(null)">
-          Show all
-        </button>
-        <button class="filter-btn" onclick="filterSelect('Action')">Action</button>
-        <button class="filter-btn" onclick="filterSelect('Horreur')">Horreur</button>
-        <button class="filter-btn" onclick="filterSelect('Animation')">
-          Animation
-        </button>
-        <button class="filter-btn" onclick="filterSelect('Comédie')">Comédie</button>
-        <button class="filter-btn" onclick="filterSelect('Drame')">Drame</button>
-        <button class="filter-btn" onclick="filterSelect('Science-Fiction')">
-          Science-fiction
-        </button>
-        <button class="filter-btn" onclick="filterSelect('Fantastique')">
+        <button class="filter-btn" data-filter="">Show all</button>
+        <button class="filter-btn" data-filter="Action">Action</button>
+        <button class="filter-btn" data-filter="Animation">Animation</button>
+        <button class="filter-btn" data-filter="Comédie">Comédie</button>
+        <button class="filter-btn" data-filter="Drame">Drame</button>
+        <button class="filter-btn" data-filter="Fantastique">
           Fantastique
         </button>
-        <button class="filter-btn" onclick="filterSelect('Romance')">Romance</button>
-        <button class="filter-btn" onclick="filterSelect('Fantasy')">Fantasy</button>
-        <button class="filter-btn" onclick="filterSelect('Surprise')">
-          Surprise me!
+        <button class="filter-btn" data-filter="Fantasy">Fantasy</button>
+        <button class="filter-btn" data-filter="Horreur">Horreur</button>
+        <button class="filter-btn" data-filter="Romance">Romance</button>
+        <button class="filter-btn" data-filter="Science-Fiction">
+          Science-fiction
         </button>
+        <button class="filter-btn" data-filter="Thriller">Thriller</button>
+        <button class="filter-btn" data-filter="Surprise">Surprise me!</button>
       </div>
 
       <div class="movies-container-all">

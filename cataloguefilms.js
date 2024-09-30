@@ -45,5 +45,3 @@ const listeFilms = [
     watchlist: true,
   },
 ];
-
-export default listeFilms;

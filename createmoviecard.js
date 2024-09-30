@@ -1,4 +1,4 @@
-import listeFilms from "./cataloguefilms.js";
+import listeFilms from "./movieCatalog.js";
 
 document.addEventListener("DOMContentLoaded", createCard);
 
