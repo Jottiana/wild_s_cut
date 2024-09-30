@@ -1,7 +1,7 @@
 import createCard from "./createmoviecard.js";
 import listeFilms from "./movieCatalog.js";
 
-window.addEventListener('load', function() {
+window.addEventListener("DOMContentLoaded", function() {
   filterSelect(null);
 });
 
