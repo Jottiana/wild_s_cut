@@ -263,7 +263,8 @@ header h1 {
     gap: 0.2rem;
     padding: 0.5rem 0 0 0;
   }
-}
+
+
 
 .button-85:after {
   z-index: -1;
