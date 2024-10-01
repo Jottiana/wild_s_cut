@@ -14,70 +14,64 @@
         <h1>Wild's Cut</h1>
       </div>
       <div class="headmenu">
-        <button class="btnheader">Account</button>
-        <button class="btnheader">Watch List</button>
+        <button class="btnheader">Account 👤</button>
+        <button class="btnheader">Watch List 🍿</button>
       </div>
     </header>
 
     <main>
-      <!--       <script>
-        function filterSelect(genre) {
-  const cardsContainer = document.querySelector(".movies-container-all");
-  console.log(cardsContainer);
-  emptyList();
-  const filteredMovies = listeFilms.filter((movie) => movie.type == genre || genre === null);
-  filteredMovies.forEach((movie) => {
-    const card = createCard(movie);
-    console.log(card);
-    cardsContainer.appendChild(card);
-  });
-}</script> -->
       <div class="filter-btn-container">
-        <button class="filter-btn" data-filter="">Show all</button>
-        <button class="filter-btn" data-filter="Action">Action</button>
-        <button class="filter-btn" data-filter="Animation">Animation</button>
-        <button class="filter-btn" data-filter="Comédie">Comédie</button>
-        <button class="filter-btn" data-filter="Drame">Drame</button>
+        <button class="filter-btn"><span>Show all</span> ♾️</button>
+        <button class="filter-btn" data-filter="Action"><span>Action</span> 💥</button>
+        <button class="filter-btn" data-filter="Animation"><span>Animation</span> 🧸</button>
+        <button class="filter-btn" data-filter="Comédie"><span>Comédie</span> 🤣</button>
+        <button class="filter-btn" data-filter="Drame"><span>Drame</span> 🎭</button>
         <button class="filter-btn" data-filter="Fantastique">
-          Fantastique
+          <span>Fantastique</span> 🦄
         </button>
-        <button class="filter-btn" data-filter="Fantasy">Fantasy</button>
-        <button class="filter-btn" data-filter="Horreur">Horreur</button>
-        <button class="filter-btn" data-filter="Romance">Romance</button>
+        <button class="filter-btn" data-filter="Fantasy"><span>Fantasy</span> 🧙‍♂️</button>
+        <button class="filter-btn" data-filter="Horreur"><span>Horreur</span> 🔪</button>
+        <button class="filter-btn" data-filter="Romance"><span>Romance</span> 💖</button>
         <button class="filter-btn" data-filter="Science-Fiction">
-          Science-fiction
+          <span>Science-fiction</span> 👾
         </button>
-        <button class="filter-btn" data-filter="Thriller">Thriller</button>
-        <button class="filter-btn" data-filter="Surprise">Surprise me!</button>
+        <button class="filter-btn" data-filter="Thriller"><span>Thriller</span> 😱</button>
+        <button class="filter-btn" data-filter="Surprise"><span>Surprise me!</span> 🎉</button>
       </div>
 
-      <div class="movies-container-all">
-        <!-- <div class="film-card-container">
-          <div class="flex-container">
-            <div class="affiche-container">
-              <div class="affiche">
-                <span>Affiche ici</span>
+      <div class="movies-container-all"></div>
+        <template id="movie-template">
+          <div class="film-card-container">
+            <div class="flex-container">
+              <div class="affiche-container">
+                <div class="affiche">
+                </div>
+              </div>
+              <div class="film-info">
+                <span class="film-title">placeholder.titre</span>
+                <div class="film-details">
+                  <span class="date">
+                    <label>Date:</label> 
+                    <p class=date-value>placeholder.date</p></span>
+                  <span class="type">
+                    <label>Genre : </label> 
+                    <p class="type-value">placeholder.genre</p>
+                  </span>
+                  <span class="duration">
+                    <label>Durée :</label>
+                    <p class="duration-value">placeholder.duree</p>
+                  </span>
+                </div>
               </div>
             </div>
-            <div class="film-info">
-              <span class="film-title">Titre Film</span>
-              <div class="film-details">
-                <span class="date">Date: 1999</span>
-                <span class="type">Genre: SF, Action</span>
-                <span class="duration">Durée: 1h43min</span>
-              </div>
+            <div class="film-description">
+              <h4>Synopsis:</h4>
+              <p class="film-synopsis">
+              </p>
+              <button class="add-watchlist">Add to Watchlist 🍿</button>
             </div>
           </div>
-          <div class="film-description">
-            <h2>Description:</h2>
-            <p>
-              Lorem ipsum lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
-              lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
-              lorem.
-              <button id="voir-plus">Voir plus</button>
-            </p>
-          </div>
-        </div> -->
+        </template>
       </div>
     </main>
     <div class="research">

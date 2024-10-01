@@ -91,6 +91,12 @@ header h1 {
   background-color: #ddd;
 }
 
+@media screen and (max-width: 768px) {
+  .btnheader {
+    font-size: 1.2rem;
+  }
+}
+
 /* LA SECTION MAIN + BOUTONS FILTRES CI DESSOUS */
 /* LA SECTION MAIN + BOUTONS FILTRES CI DESSOUS */
 /* LA SECTION MAIN + BOUTONS FILTRES CI DESSOUS */
@@ -103,14 +109,54 @@ header h1 {
   align-items: center;
   gap: 10px;
   padding: 1rem 0;
+  margin: 5px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .filter-btn-container {
+    gap: 10px;
+    margin: 0 5px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 0 5px 10px rgb(255, 255, 255);
+    padding: 5px 0;
+    margin: 0 10px;
+    z-index: 10;
+  }
 }
 
 .filter-btn {
-  border: none;
+  border: 1px solid #ccc;
   outline: none;
-  padding: 12px 16px;
+  font-size: 1.2rem;
+  padding: 12px 12px;
   background-color: #f1f1f1;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-btn span {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .filter-btn {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+  }
+
+  .filter-btn span {
+    display: none;
+  }
 }
 
 .filter-btn:hover {
@@ -163,6 +209,14 @@ header h1 {
   padding-right: 1rem;
 }
 
+.film-title {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: 850;
+  font-size: 17px;
+  color: var(--dark-color);
+}
+
 .affiche {
   background-color: #add8e6;
   aspect-ratio: 2/3;
@@ -175,7 +229,7 @@ header h1 {
   border-radius: 10px;
 }
 
-h4 {
+.film-description > h4 {
   margin: 0;
 }
 
@@ -183,31 +237,57 @@ h4 {
   width: 65%;
 }
 
+.film-details label {
+  font-weight: 400;
+  display: inline-block;
+  margin: 0;
+}
+
+.film-details p {
+  display: inline-block;
+  margin: 5px 0;
+}
+
 .film-details {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--dark-color);
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .film-description {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.film-description p {
+.film-synopsis {
   margin-top: 5px;
+  display: -webkit-box;
+  width: 100%;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-#voir-plus {
+.film-synopsis.show {
+  -webkit-line-clamp: 30;
+  overflow: visible;
+}
+
+.add-watchlist {
   background-color: #c52020;
   color: #fff;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
+  align-self: center;
 }
 
-#voir-plus:hover {
+.add-watchlist:hover {
   background-color: #982626;
 }
 
