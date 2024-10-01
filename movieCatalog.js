@@ -92,7 +92,7 @@ const listeFilms = [
   {
     name: "Matrix",
     date: "1999",
-    type: "Science_fiction",
+    type: "Science-Fiction",
     duration: "2h06",
     desc: "Neo, un des pirates les plus recherchés du cyber-espace, reçoit de mystérieux messages cryptés d'un certain Morpheus. Celui-ci l'exhorte à aller au-delà des apparences et à trouver la réponse à la question qui hante constamment ses pensées : qu'est-ce que la Matrice ?",
     img: "https://media.senscritique.com/media/000021915685/300/matrix.png",
@@ -146,7 +146,7 @@ const listeFilms = [
   {
     name: "Interstellar",
     date: "2014",
-    type: "Science-fiction",
+    type: "Science-Fiction",
     duration: "2h49",
     desc: "Alors que la vie sur Terre touche à sa fin, un groupe d'explorateurs s'attelle à la mission la plus importante de l'histoire de l'humanité : franchir les limites de notre galaxie pour savoir si l'homme peut vivre sur une autre planète…",
     img: "https://media.senscritique.com/media/000018762465/300/interstellar.jpg",
@@ -155,7 +155,7 @@ const listeFilms = [
   {
     name: "2001, l'Odyssée de l'espace",
     date: "1968",
-    type: "Science-fiction",
+    type: "Science-Fiction",
     duration: "2h40",
     desc: "A l'aube de l'Humanité, dans le désert africain, une tribu de primates subit les assauts répétés d'une bande rivale, qui lui dispute un point d'eau. La découverte d'un monolithe noir inspire au chef des singes assiégés un geste inédit et décisif. En 2001, quatre millions d'années plus tard, un vaisseau spatial évolue en orbite lunaire au rythme langoureux du \"Beau Danube Bleu\". A son bord, le Dr. Heywood Floyd enquête secrètement sur la découverte d'un monolithe noir qui émet d'étranges signaux vers Jupiter.",
     img: "https://media.senscritique.com/media/000019230851/300/2001_l_odyssee_de_l_espace.jpg",
@@ -191,7 +191,7 @@ const listeFilms = [
   {
     name: "Blade Runner",
     date: "1982",
-    type: "Science-fiction",
+    type: "Science-Fiction",
     duration: "1h57",
     desc: "2019, Los Angeles. La Terre est surpeuplée et l'humanité est partie coloniser l'espace. Les nouveaux colons sont assistés de Replicants, androïdes que rien ne peut distinguer de l'être humain. Conçus comme de nouveaux esclaves, certains parmi les plus évolués s'affranchissent de leurs chaînes et s'enfuient. Rick Deckard, un ancien Blade Runner, catégorie spéciale de policiers chargés de \"retirer\" ces replicants, accepte une nouvelle mission consistant à retrouver quatre de ces individus qui viennent de regagner la Terre après avoir volé une navette spatiale. Ces replicants sont des Nexus 6, derniers nés de la technologie développée par la Tyrell Corporation.",
     img: "https://media.senscritique.com/media/000019855182/300/blade_runner.jpg",
@@ -218,7 +218,7 @@ const listeFilms = [
   {
     name: "Premier Contact",
     date: "2016",
-    type: "Science-fiction",
+    type: "Science-Fiction",
     duration: "1h56",
     desc: "Lorsque de mystérieux vaisseaux venus du fond de l'espace surgissent un peu partout sur Terre, une équipe d'experts est rassemblée sous la direction de la linguiste Louise Banks afin de tenter de comprendre leurs intentions. Face à l'énigme que constituent leur présence et leurs messages mystérieux, les réactions dans le monde sont extrêmes et l'humanité se retrouve bientôt au bord d'une guerre absolue. Louise Banks et son équipe n'ont que très peu de temps pour trouver des réponses. Pour les obtenir, la jeune femme va prendre un risque qui pourrait non seulement lui coûter la vie, mais détruire le genre humain… ",
     img: "https://media.senscritique.com/media/000016785399/300/premier_contact.jpg",
@@ -479,7 +479,7 @@ const listeFilms = [
   {
     name: "Everything Everywhere All at Once",
     date: "2022",
-    type: "Science-fiction",
+    type: "Science-Fiction",
     duration: "2h19",
     desc: "Evelyn Wang est à bout : elle ne comprend plus sa famille, son travail et croule sous les impôts… Soudain, elle se retrouve plongée dans le multivers, des mondes parallèles où elle explore toutes les vies qu'elle aurait pu mener. Face à des forces obscures, elle seule peut sauver le monde mais aussi préserver la chose la plus précieuse : sa famille.",
     img: "https://media.senscritique.com/media/000021157918/300/everything_everywhere_all_at_once.png",
