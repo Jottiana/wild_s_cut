@@ -1,14 +1,13 @@
-filterSelect("all")
+filterSelect("all");
 function filterSelect(genre) {
   let x, i;
   x = document.getElementsByClassName("filterDiv");
   if (genre == "all") genre = "";
-    for (i = 0; i < x.length; i++) {
+  for (i = 0; i < x.length; i++) {
     RemoveClass(x[i], "show");
     if (x[i].className.indexOf(genre) > -1) AddClass(x[i], "show");
   }
 }
-
 
 function AddClass(element, name) {
   let i, arr1, arr2;
@@ -36,7 +35,7 @@ function RemoveClass(element, name) {
 let btnContainer = document.getElementById("myBtnContainer");
 let btns = btnContainer.getElementsByClassName("btn");
 for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+  btns[i].addEventListener("click", function () {
     let current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
