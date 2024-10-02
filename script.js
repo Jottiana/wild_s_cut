@@ -55,7 +55,6 @@ buttons.forEach((button) => {
 });
 
 document.addEventListener("DOMContentLoaded", showAll);
-document.addEventListener("DOMContentLoaded", addWatchlist());
 
 let search = document.querySelector(".search");
 let searchInput = document.querySelector("#search-input");
