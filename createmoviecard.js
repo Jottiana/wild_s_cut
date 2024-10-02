@@ -25,8 +25,35 @@ function createCard(movie) {
     this.classList.toggle("show");
   });
 
-  const buttonAddWatchlist = card.querySelector(".add-watchlist");
-  buttonAddWatchlist.addEventListener("click", () => addWatchlist(movie.name));
+  // const buttonAddWatchlist = card.querySelector(".add-watchlist");
+  // buttonAddWatchlist.addEventListener("click", () => addWatchlist(movie.name));
+
+  let addButton = card.querySelector(".add-watchlist");
+  let removeButton = card.querySelector(".remove-watchlist");
+
+  let watchlist = JSON.parse(localStorage.getItem("watchlist"));
+  if (watchlist === undefined || watchlist === null) {
+    watchlist = [];
+  }
+  if (watchlist.includes(movie.name)) {
+    addButton.style.display = "none";
+    removeButton.style.display = "block";
+  } else {
+    addButton.style.display = "block";
+    removeButton.style.display = "none";
+  }
+
+  addButton.addEventListener("click", () => {
+    addWatchlist(movie.name);
+    addButton.style.display = "none";
+    removeButton.style.display = "block";
+  });
+
+  removeButton.addEventListener("click", () => {
+    addWatchlist(movie.name);
+    addButton.style.display = "block";
+    removeButton.style.display = "none";
+  });
 
   return card;
 }
@@ -39,7 +66,7 @@ function addWatchlist(filmId) {
   const index = watchlist.indexOf(filmId);
   if (index > -1) {
     // only splice array when item is found
-    watchlist.splice(index, 1); // 2nd parameter means remove one item only
+    watchlist.splice(index, 1);
   } else {
     watchlist.push(filmId);
   }
