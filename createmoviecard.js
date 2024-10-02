@@ -25,7 +25,25 @@ function createCard(movie) {
     this.classList.toggle("show");
   });
 
+  const buttonAddWatchlist = card.querySelector(".add-watchlist");
+  buttonAddWatchlist.addEventListener("click", () => addWatchlist(movie.name));
+
   return card;
+}
+
+function addWatchlist(filmId) {
+  let watchlist = JSON.parse(localStorage.getItem("watchlist"));
+  if (watchlist === undefined || watchlist === null) {
+    watchlist = [];
+  }
+  const index = watchlist.indexOf(filmId);
+  if (index > -1) {
+    // only splice array when item is found
+    watchlist.splice(index, 1); // 2nd parameter means remove one item only
+  } else {
+    watchlist.push(filmId);
+  }
+  localStorage.setItem("watchlist", JSON.stringify(watchlist));
 }
 
 export default createCard;
