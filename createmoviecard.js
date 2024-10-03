@@ -5,6 +5,9 @@ function createCard(movie) {
   const affiche = card.querySelector(".affiche");
   affiche.style.backgroundImage = `url(${movie.img})`;
 
+  const youtubeTrailer = card.querySelector(".trailer-link");
+  youtubeTrailer.href = movie.trailer;
+
   const filmTitle = card.querySelector(".film-title");
   filmTitle.textContent = movie.name;
 
@@ -16,6 +19,9 @@ function createCard(movie) {
 
   const filmDuration = card.querySelector(".duration-value");
   filmDuration.textContent = `${movie.duration}`;
+
+  const recommendation = card.querySelector(".recommendation");
+  recommendation.textContent = `${movie.recommendation}`;
 
   const descriptionText = card.querySelector(".film-synopsis");
   descriptionText.textContent = movie.desc;
