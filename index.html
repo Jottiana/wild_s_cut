@@ -74,7 +74,7 @@
           <span>Science-fiction</span> 👾
         </button>
         <button class="filter-btn" data-filter="Thriller"><span>Thriller</span> 😱</button>
-        <button class="filter-btn" data-filter="Surprise"><span>Surprise me!</span> 🎉</button>
+        <button class="filter-btn" data-filter="Surprise" id="surprise"><span>Surprise me!</span> 🎉</button>
       </div>
 
       <div class="movies-container-all"></div>
@@ -84,6 +84,8 @@
               <div class="affiche-container">
                 <div class="affiche">
                 </div>
+                <a class=trailer-link href="https://www.youtube.com" target="_blank"><img class="youtube-icon" src="./img/youtube-icon.svg"/>&nbsp;Trailer
+                </a>
               </div>
               <div class="film-info">
                 <span class="film-title">placeholder.titre</span>
@@ -99,14 +101,21 @@
                     <label>Durée :</label>
                     <p class="duration-value">placeholder.duree</p>
                   </span>
+                  <span class="thumbs-up">
+                    <label>Aimé par :</label>
+                    <p class="recommendation">placeholder.duree</p>
+                  </span>
                 </div>
               </div>
             </div>
             <div class="film-description">
-              <h4>Synopsis:</h4>
+              <h4>Synopsis</h4>
               <p class="film-synopsis">
               </p>
+              <div class="watchlist-toggle-buttons">
               <button class="add-watchlist">Add to Watchlist 🍿</button>
+              <button class="remove-watchlist" style="display: none;">Remove from Watchlist</button>
+              </div>
             </div>
           </div>
         </template>
@@ -137,10 +146,6 @@
         </div>
       </div>
     </nav>
-
-
-    
-  
       <ul class="footer-links">
         <li><a href="contacts">Contacts</a></li>
         <li><a href="cookies">Cookies</a></li>
