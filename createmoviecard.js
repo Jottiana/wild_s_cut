@@ -5,6 +5,9 @@ function createCard(movie) {
   const affiche = card.querySelector(".affiche");
   affiche.style.backgroundImage = `url(${movie.img})`;
 
+  const youtubeTrailer = card.querySelector(".trailer-link");
+  youtubeTrailer.href = movie.trailer;
+
   const filmTitle = card.querySelector(".film-title");
   filmTitle.textContent = movie.name;
 
