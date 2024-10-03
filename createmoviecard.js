@@ -20,6 +20,9 @@ function createCard(movie) {
   const filmDuration = card.querySelector(".duration-value");
   filmDuration.textContent = `${movie.duration}`;
 
+  const recommendation = card.querySelector(".recommendation");
+  recommendation.textContent = `${movie.recommendation}`;
+
   const descriptionText = card.querySelector(".film-synopsis");
   descriptionText.textContent = movie.desc;
 
