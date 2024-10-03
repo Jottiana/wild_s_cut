@@ -301,11 +301,11 @@ header h1 {
   margin-top: 5px;
   display: -webkit-box;
   width: 100%;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  max-height: 5em;
+  max-height: 4em;
   transition: all 0.8s ease-in-out;
 }
 
