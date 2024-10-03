@@ -92,3 +92,4 @@ function showWatchlist() {
 let watchlistBtn = document.getElementById("watchlist-show");
 
 watchlistBtn.addEventListener("click", showWatchlist);
+
