@@ -1,4 +1,4 @@
-const listeFilms = [
+const movies = [
   {
     name: "Le Voyage de Chihiro",
     date: "2001",
@@ -523,4 +523,4 @@ const listeFilms = [
   },
 ];
 
-export default listeFilms;
+export default movies;
