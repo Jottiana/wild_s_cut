@@ -524,15 +524,18 @@ a {
 .back-to-top {
   position: fixed;
   bottom: 70px;
-  right: 20px;
+  right: 15px;
   z-index: 999;
+  background-color: white;
+  border-radius: 50px;
+  padding: 5px;
 }
 
 .back-to-top-button {
   display: block;
   width: 40px;
   height: 40px;
-  background-color: #111;
+  background-color: var(--wine-color-lowopacity);
   color: #fff;
   border-radius: 50%;
   text-align: center;
@@ -542,7 +545,11 @@ a {
 }
 
 .back-to-top-button:hover {
-  background-color: #333;
+  background-color: #bfabab;
+}
+
+.back-to-top-button i {
+  font-size: 30px;
 }
 
 /* footer */
