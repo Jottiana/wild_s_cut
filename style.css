@@ -598,9 +598,7 @@ ul > li > a {
   position: fixed;
   border: none;
   outline: none;
-   
-  
-}
+  }
 
 @media screen and (min-width: 768px)
 {
@@ -613,8 +611,6 @@ ul > li > a {
 
 #scrollToTopButton i {
   color: rgb(233, 9, 9);
-
-  
 }
 #scrollToTopButton:hover,
 #scrollToTopButton:focus,
