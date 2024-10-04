@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wild's cut</title>
-    <link rel="shortcut icon" href="img/favicon-pop-corn.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="shortcut icon"
+      href="img/favicon-pop-corn.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <script type="module" src="./script.js"></script>
   </head>
   <body>
     <header>
       <div class="logoTitle">
-        <img src="./img/logo-test-1.png" width="200" alt="logo pop corn">
+        <img src="./img/logo-test-1.png" width="200" alt="logo pop corn" />
         <h1>Wild's Cut</h1>
       </div>
       <div class="headmenu">
@@ -21,92 +25,143 @@
     </header>
     <div class="search-box-div">
       <div class="search-input">
-        <input type="search" placeholder="Search..." id="search-input">
+        <input type="search" placeholder="Search..." id="search-input" />
       </div>
       <div class="search-content">
-        <i class="search fa fa-search"><img src="img/search_icon.svg" alt="Rechercher"></i>
+        <i class="search fa fa-search"
+          ><img src="img/search_icon.svg" alt="Rechercher"
+        /></i>
       </div>
     </div>
     <main>
       <div class="filter-btn-container">
         <button class="filter-btn"><span>Show all</span> ♾️</button>
-        <button class="filter-btn" data-filter="Action"><span>Action</span> 💥</button>
-        <button class="filter-btn" data-filter="Animation"><span>Animation</span> 🧸</button>
-        <button class="filter-btn" data-filter="Comédie"><span>Comédie</span> 🤣</button>
-        <button class="filter-btn" data-filter="Drame"><span>Drame</span> 🎭</button>
-        <button class="filter-btn" data-filter="Fantastique"><span>Fantastique</span> 🦄</button>
-        <button class="filter-btn" data-filter="Fantasy"><span>Fantasy</span> 🧙‍♂️</button>
-        <button class="filter-btn" data-filter="Horreur"><span>Horreur</span> 🔪</button>
-        <button class="filter-btn" data-filter="Romance"><span>Romance</span> 💖</button>
-        <button class="filter-btn" data-filter="Science-Fiction"><span>Science-fiction</span> 👾</button>
-        <button class="filter-btn" data-filter="Thriller"><span>Thriller</span> 😱</button>
-        <button class="filter-btn" data-filter="Surprise" id="surprise"><span>Surprise me!</span> 🎉</button>
+        <button class="filter-btn" data-filter="Action">
+          <span>Action</span> 💥
+        </button>
+        <button class="filter-btn" data-filter="Animation">
+          <span>Animation</span> 🧸
+        </button>
+        <button class="filter-btn" data-filter="Comédie">
+          <span>Comédie</span> 🤣
+        </button>
+        <button class="filter-btn" data-filter="Drame">
+          <span>Drame</span> 🎭
+        </button>
+        <button class="filter-btn" data-filter="Fantastique">
+          <span>Fantastique</span> 🦄
+        </button>
+        <button class="filter-btn" data-filter="Fantasy">
+          <span>Fantasy</span> 🧙‍♂️
+        </button>
+        <button class="filter-btn" data-filter="Horreur">
+          <span>Horreur</span> 🔪
+        </button>
+        <button class="filter-btn" data-filter="Romance">
+          <span>Romance</span> 💖
+        </button>
+        <button class="filter-btn" data-filter="Science-Fiction">
+          <span>Science-fiction</span> 👾
+        </button>
+        <button class="filter-btn" data-filter="Thriller">
+          <span>Thriller</span> 😱
+        </button>
+        <button class="filter-btn" data-filter="Surprise" id="surprise">
+          <span>Surprise me!</span> 🎉
+        </button>
       </div>
 
       <div class="movies-container-all"></div>
-        <template id="movie-template">
-          <div class="film-card-container">
-            <div class="flex-container">
-              <div class="affiche-container">
-                <div class="affiche">
-                </div>
-                <a class=trailer-link href="https://www.youtube.com" target="_blank"><img class="youtube-icon" src="./img/youtube-icon.svg">&nbsp;Trailer
-                </a>
-              </div>
-              <div class="film-info">
-                <span class="film-title">placeholder.titre</span>
-                <div class="film-details">
-                  <span class="date">
-                    <label>Date:</label> 
-                    <p class=date-value>placeholder.date</p>
-                  </span>
-                  <span class="type">
-                    <label>Genre : </label> 
-                    <p class="type-value">placeholder.genre</p>
-                  </span>
-                  <span class="duration">
-                    <label>Durée :</label>
-                    <p class="duration-value">placeholder.duree</p>
-                  </span>
-                  <span class="thumbs-up">
-                    <label>Aimé par :</label>
-                    <p class="recommendation">placeholder.duree</p>       
-                  </span>
-                </div>
-              </div>
+      <template id="movie-template">
+        <div class="film-card-container">
+          <div class="flex-container">
+            <div class="affiche-container">
+              <div class="affiche"></div>
+              <a
+                class="trailer-link"
+                href="https://www.youtube.com"
+                target="_blank"
+                ><img
+                  class="youtube-icon"
+                  src="./img/youtube-icon.svg"
+                />&nbsp;Trailer
+              </a>
             </div>
-            <div class="film-description">
-              <h4>Synopsis</h4>
-                <p class="film-synopsis"></p>
-                <div class="watchlist-toggle-buttons">
-                  <button class="add-watchlist">Add to Watchlist 🍿</button>
-                  <button class="remove-watchlist" style="display: none;">Remove from Watchlist</button>
-                </div>
+            <div class="film-info">
+              <span class="film-title">placeholder.titre</span>
+              <div class="film-details">
+                <span class="date">
+                  <label>Date:</label>
+                  <p class="date-value">placeholder.date</p>
+                </span>
+                <span class="type">
+                  <label>Genre : </label>
+                  <p class="type-value">placeholder.genre</p>
+                </span>
+                <span class="duration">
+                  <label>Durée :</label>
+                  <p class="duration-value">placeholder.duree</p>
+                </span>
+                <span class="thumbs-up">
+                  <label>Aimé par :</label>
+                  <p class="recommendation">placeholder.duree</p>
+                </span>
+              </div>
             </div>
           </div>
-        </template>
+          <div class="film-description">
+            <h4>Synopsis</h4>
+            <p class="film-synopsis"></p>
+            <div class="watchlist-toggle-buttons">
+              <button class="add-watchlist">Add to Watchlist 🍿</button>
+              <button class="remove-watchlist" style="display: none">
+                Remove from Watchlist
+              </button>
+            </div>
+          </div>
+        </div>
+      </template>
+      <div class="back-to-top">
+        <a href="#top" class="back-to-top-button">
+          <i class="back-to-top-icon fa fa-arrow-up"
+            ><img
+              src="img/double_arrow_up.svg"
+              alt="back to top"
+              id="back-to-top-icon"
+          /></i>
+        </a>
+      </div>
     </main>
 
     <footer>
       <div class="title-header">
         <h3>Wild's cut by J.A.M.S</h3>
-          <p>© 2024 All rights reserved</p>
+        <p>© 2024 All rights reserved</p>
       </div>
-      
+
       <nav>
         <div class="reseaux">
-          <a href="https://facebook.com"><img src="img/icons8-fb-64.png" alt="fb icon"></a>
-          <a href="https://x.com/"><img src="img/icons8-x-48.png" alt="twitter icon"></a>
-          <a href="https://www.instagram.com/"><img src="img/icons8-instagram-48.png" alt="inst icon"></a>
+          <a href="https://facebook.com"
+            ><img src="img/icons8-fb-64.png" alt="fb icon"
+          /></a>
+          <a href="https://x.com/"
+            ><img src="img/icons8-x-48.png" alt="twitter icon"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="img/icons8-instagram-48.png" alt="inst icon"
+          /></a>
         </div>
       </nav>
 
       <ul class="footer-links">
         <li><a href="contacts">Contacts</a></li>
         <li><a href="cookies">Cookies</a></li>
-        <li><a href="politique-de-confidentialite">Politique de confidentialité</a></li>
+        <li>
+          <a href="politique-de-confidentialite"
+            >Politique de confidentialité</a
+          >
+        </li>
       </ul>
-
     </footer>
   </body>
 </html>

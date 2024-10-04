@@ -521,6 +521,30 @@ a {
   color: aliceblue;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 999;
+}
+
+.back-to-top-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.back-to-top-button:hover {
+  background-color: #333;
+}
+
 /* footer */
 
 footer {
