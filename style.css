@@ -529,6 +529,7 @@ a {
   background-color: white;
   border-radius: 50px;
   padding: 5px;
+  visibility: hidden;
 }
 
 .back-to-top-button {
