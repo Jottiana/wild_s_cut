@@ -5,7 +5,7 @@ function scrollFunction() {
   
     var mybutton = document.getElementById("scrollToTopButton");
 
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
         mybutton.style.opacity = 1;
         mybutton.style.visibility = "visible";
     } else {
@@ -18,4 +18,3 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-export default scrollFunction;
